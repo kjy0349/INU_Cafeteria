@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup  # 크롤링을 위해 bs4 라이브러리 사용
 from urllib.request import urlopen
 import pandas as pd
-from tqdm.notebook import tqdm
 
 today_menu_list = [[[], [], [], [], []]]
 all_menu_list = []
