@@ -8,6 +8,8 @@
 
 입력한 날짜(이번주 식단내)의 식사표를 출력해줍니다.
 
+
+
 **현재 구현된 기능**:
 
 **날짜별 메뉴출력(daymenu_show)**
@@ -15,6 +17,7 @@
 **특정 날짜, 특정 시간 메뉴 출력(typemenu_show) // ex) 7월 10일 중식 알려줘**
 
 ![ezgif-1-3c0e25c981aa](https://user-images.githubusercontent.com/41959969/125241348-491f9100-e326-11eb-80a5-b386fef2f5fb.gif)
+ 
  
  
  **PATCH NOTE**
