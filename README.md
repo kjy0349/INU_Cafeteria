@@ -1,8 +1,10 @@
 # INU_Cafeteria
 
-**학식크롤러 카카오톡 스킬 봇 (v1.0)**
+**학식크롤러 카카오톡 스킬 봇 (v1.1)**
+**AWS lambda**
 
 **카카오톡 채널 @inu_food**
+
 
 입력한 날짜(이번주 식단내)의 식사표를 출력해줍니다.
 
@@ -12,6 +14,13 @@
 
 ![ezgif-1-3c0e25c981aa](https://user-images.githubusercontent.com/41959969/125241348-491f9100-e326-11eb-80a5-b386fef2f5fb.gif)
  
+ 
+ **PATCH NOTE**
+ 
+v1.0 : 날짜별 메뉴출력(엔티티 포함) ex) 월요일 메뉴 알려줘, 내일 메뉴 알려줘
+
+v1.1 : 날짜별 개별메뉴 출력(엔티티 포함) ex) 월요일 중식 알려줘, 내일 석식 알려줘, 내일 라면 알려줘
+       aws lambda function github에 추가
 
 앞으로 구현할 기능 : 
 
