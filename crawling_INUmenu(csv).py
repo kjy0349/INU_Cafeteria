@@ -51,8 +51,6 @@ for tr_menu in soup.find(id='menuBox').find_all('tr'):  # menuBox라는 이름�
     if day:
         tday = day.get_text().strip()[:1]
         short_date = int(day.get_text().strip()[3:8].replace('/',''))
-        print(tday)
-        print(short_date)
     if menutime_tr:
         menuTime.append(menutime_tr.get_text())
 
