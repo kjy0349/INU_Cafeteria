@@ -19,7 +19,6 @@
 | ![ezgif-1-3c0e25c981aa](https://user-images.githubusercontent.com/41959969/125241348-491f9100-e326-11eb-80a5-b386fef2f5fb.gif)  | ![ezgif-1-1d72dd49f3a7](https://user-images.githubusercontent.com/41959969/125269142-644cc980-e343-11eb-88ec-5a5d5d5b8677.gif)  |
 
  <br><br>
- 
  **PATCH NOTE**
  
 v1.0 : 날짜별 메뉴출력(엔티티 포함) ex) 월요일 메뉴 알려줘, 내일 메뉴 알려줘
