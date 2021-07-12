@@ -22,7 +22,7 @@
 v1.0 : 날짜별 메뉴출력(엔티티 포함) ex) 월요일 메뉴 알려줘, 내일 메뉴 알려줘
 
 v1.1 : 날짜별 개별메뉴 출력(엔티티 포함) ex) 월요일 중식 알려줘, 내일 석식 알려줘, 내일 라면 알려줘
-       aws lambda function github에 추가
+       <br>aws lambda function github에 추가
 
 **앞으로 구현할 기능**:
 
