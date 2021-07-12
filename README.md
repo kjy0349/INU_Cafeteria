@@ -14,7 +14,7 @@
 
 **날짜별 메뉴출력(daymenu_show)** **특정 날짜, 특정 시간 메뉴 출력(typemenu_show) // ex) 7월 10일 중식 알려줘**
 
-![ezgif-1-3c0e25c981aa](https://user-images.githubusercontent.com/41959969/125241348-491f9100-e326-11eb-80a5-b386fef2f5fb.gif) ![ezgif-1-1d72dd49f3a7](https://user-images.githubusercontent.com/41959969/125269142-644cc980-e343-11eb-88ec-5a5d5d5b8677.gif)
+![ezgif-1-3c0e25c981aa](https://user-images.githubusercontent.com/41959969/125241348-491f9100-e326-11eb-80a5-b386fef2f5fb.gif){: weight=80%} ![ezgif-1-1d72dd49f3a7](https://user-images.githubusercontent.com/41959969/125269142-644cc980-e343-11eb-88ec-5a5d5d5b8677.gif){: weight=80%}
  <br><br><br>
  
  **PATCH NOTE**
