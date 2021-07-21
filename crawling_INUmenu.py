@@ -35,6 +35,8 @@ def find_td(selected_menu, result_list,real_index):
                     result_list[index][real_index].append(oneday_menuplan[j].strip())
         index += 1
 
+# def find_today_index():
+
 
 
 url = "https://www.uicoop.ac.kr/main.php?mkey=2&w=2&l=1"
@@ -47,10 +49,10 @@ for tr_menu in soup.find(id='menuBox').find_all('tr'):  # menuBox라는 이름�
     not_today_menu = tr_menu.select('.din_list')
     today_menu = tr_menu.select('.din_lists')
     menutime_tr = tr_menu.find(class_ = 'corn_nm')
-    day = tr_menu.find(class_ = 'din_mns')
+    day = tr_menu.find(class_ = 'din_mns') # 오늘 요일을 추출하기 위해서, 오늘 요일과 날짜가 적혀있는 din_mns 추출
     if day:
-        tday = day.get_text().strip()[:1]
-        short_date = int(day.get_text().strip()[3:8].replace('/',''))
+        tday = day.get_text().strip()[:1] # 오늘 요일을 뽑아냄
+        short_date = int(day.get_text().strip()[3:8].replace('/','')) # 오늘 날짜를 뽑아냄 ex) 07/20 -> int(0720) -> 720
     if menutime_tr:
         menuTime.append(menutime_tr.get_text())
 
@@ -62,8 +64,8 @@ for tr_menu in soup.find(id='menuBox').find_all('tr'):  # menuBox라는 이름�
         find_td(today_menu, today_menu_list, index1)
         index1 += 1
 for i in range(len(day_list)):
-    if tday == day_list[i]:
-        all_menu_list.insert(i,today_menu_list[0])
+    if tday == day_list[i]: # 오늘 요일이 all_menu_list에서 몇번째 인덱스인지 찾아냄
+        all_menu_list.insert(i,today_menu_list[0]) # all_menu_list에 오늘 메뉴를 추가해줌
         today_index = i
         break
-print(short_date, today_index)
+print(today_menu_list[0])
