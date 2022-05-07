@@ -19,20 +19,21 @@ def find_td(selected_menu, result_list,real_index):
     for menu_sub_list in selected_menu:  # select는 상단의 코드에서 복수의 td들을 ResultSet(일종의 List형태)로 가져오므로, 반복문을 통해서 각각의 요소들을 get_text()로 처리해줘야함
         oneday_menuplan = menu_sub_list.get_text().split('\n')  # 한칸에 모든 메뉴가 \n으로 나누어져있음
         for j in range(len(oneday_menuplan)):
-            if (oneday_menuplan[j] is '\r' or  # 메뉴가 게재된칸에는 가격정보와 제공시간이 적혀있으므로, 메뉴만 얻기위해 예외처리
-                    oneday_menuplan[j][0] is '*' or
-                    oneday_menuplan[j][0] is '[' or
-                    oneday_menuplan[j][0] is '(' or
-                    oneday_menuplan[j][0] is '❝'
-            ):
-                break
-            elif oneday_menuplan[j][0] is '<':  # <즉석조리기기>칸의 라면 메뉴들을 가져오기위한 예외처리
-                continue
-            else:
-                if '국밥' in oneday_menuplan[j]:  # 국밥칸에서 칼로리 정보를 제외하고 메뉴 이름만 가져오기위한 예외처리
-                    result_list[index][real_index].append(oneday_menuplan[j][:4].strip())
+            if (len(oneday_menuplan[j]) > 0):
+                if (oneday_menuplan[j][0] is '\r' or  # 메뉴가 게재된칸에는 가격정보와 제공시간이 적혀있으므로, 메뉴만 얻기위해 예외처리
+                        oneday_menuplan[j][0] is '*' or
+                        oneday_menuplan[j][0] is '[' or
+                        oneday_menuplan[j][0] is '(' or
+                        oneday_menuplan[j][0] is '❝'
+                ):
+                    break
+                elif oneday_menuplan[j][0] is '<':  # <즉석조리기기>칸의 라면 메뉴들을 가져오기위한 예외처리
+                    continue
                 else:
-                    result_list[index][real_index].append(oneday_menuplan[j].strip())
+                    if '국밥' in oneday_menuplan[j]:  # 국밥칸에서 칼로리 정보를 제외하고 메뉴 이름만 가져오기위한 예외처리
+                        result_list[index][real_index].append(oneday_menuplan[j][:4].strip())
+                    else:
+                        result_list[index][real_index].append(oneday_menuplan[j].strip())
         index += 1
 
 
