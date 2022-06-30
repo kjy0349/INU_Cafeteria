@@ -38,7 +38,7 @@ def find_td(selected_menu, result_list,real_index):
 
 
 
-url = "https://www.uicoop.ac.kr/main.php?mkey=2&w=2&l=1"
+url = "https://inucoop.com/main.php?mkey=2&w=2"
 html = urlopen(url)
 soup = BeautifulSoup(html, "html.parser")  # 원하는 태그 정보를 뽑아줄 bs4 인스턴스 생성
 index = 0
